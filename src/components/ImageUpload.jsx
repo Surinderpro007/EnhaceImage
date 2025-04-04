@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ImageUpload = (props) => {
+    // Api key = wxd577wyq3j1rvnf0 
 
     const ShowImageHandler = (e) => {
        const file = e.target.files[0];
