@@ -14,18 +14,18 @@ const Home = () => {
     setLoading(true)
             try{
                 const enhancedURL = await enhancedImageAPI(file)
-                setEnhancedImage(enhancedURL)
+                setEnhancedImage(enhancedURL.image)
                 setLoading(false)
             }
             catch(err){
                 console.log(err)
-                alert("Error while enhancing image, please try again")
+                throw new Error("Error while enhancing image, please try again")
             }
+          }
 
-    }
-
-  return (
-    <>
+          console.log("Thse ->", enhancedImage)
+          return (
+            <>
       
       <ImageUpload imageUploadHandler={imageUploadHandler}/>
       <ImagePreview upload={uploadedimage} enhance={enhancedImage} loading={loading} />
