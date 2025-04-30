@@ -1,4 +1,4 @@
-const API_KEY = "wxd577wyq3j1rvnf0"
+const API_KEY = "wxnqqpx55zyvct445"
 const BASE_URL = "https://techhk.aoscdn.com/"
 // "https://techhk.aoscdn.com/api/tasks/visual/scale"
 
